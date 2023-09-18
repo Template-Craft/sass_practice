@@ -75,7 +75,6 @@ gulp.task("styles", () => {
       })
     )
     .pipe(gcmq())
-    .pipe(sass.sync())
     .pipe(gulp.dest(paths.styles.build))
     .pipe(browserSync.stream());
 });
